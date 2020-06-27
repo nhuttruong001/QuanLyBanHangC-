@@ -1,0 +1,12 @@
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe.config
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.exe
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\bin\Debug\QuanLyBanHang.pdb
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csprojResolveAssemblyReference.cache
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form1.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Properties.Resources.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.csproj.GenerateResource.Cache
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.exe
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.pdb
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form2.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form3.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form4.resources
