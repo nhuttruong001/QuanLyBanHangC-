@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txtUser = new System.Windows.Forms.TextBox();
             this.txtPass = new System.Windows.Forms.TextBox();
-            this.btnDangNhap = new System.Windows.Forms.Button();
+            this.txtUser = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.btnDangNhap = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -53,34 +53,21 @@
             this.panel1.Size = new System.Drawing.Size(530, 146);
             this.panel1.TabIndex = 0;
             // 
-            // panel2
+            // txtPass
             // 
-            this.panel2.Controls.Add(this.btnThoat);
-            this.panel2.Controls.Add(this.btnDangNhap);
-            this.panel2.Location = new System.Drawing.Point(13, 164);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(529, 69);
-            this.panel2.TabIndex = 1;
+            this.txtPass.Location = new System.Drawing.Point(198, 107);
+            this.txtPass.Name = "txtPass";
+            this.txtPass.Size = new System.Drawing.Size(287, 22);
+            this.txtPass.TabIndex = 4;
+            this.txtPass.Text = "123";
             // 
-            // label1
+            // txtUser
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(56, 21);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(224, 26);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Thông tin đăng nhập";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(23, 66);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(145, 22);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Tên người dùng :";
+            this.txtUser.Location = new System.Drawing.Point(198, 66);
+            this.txtUser.Name = "txtUser";
+            this.txtUser.Size = new System.Drawing.Size(287, 22);
+            this.txtUser.TabIndex = 3;
+            this.txtUser.Text = "teonv";
             // 
             // label3
             // 
@@ -92,29 +79,34 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Mật khẩu :";
             // 
-            // txtUser
+            // label2
             // 
-            this.txtUser.Location = new System.Drawing.Point(198, 66);
-            this.txtUser.Name = "txtUser";
-            this.txtUser.Size = new System.Drawing.Size(287, 22);
-            this.txtUser.TabIndex = 3;
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(23, 66);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(145, 22);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Tên người dùng :";
             // 
-            // txtPass
+            // label1
             // 
-            this.txtPass.Location = new System.Drawing.Point(198, 107);
-            this.txtPass.Name = "txtPass";
-            this.txtPass.Size = new System.Drawing.Size(287, 22);
-            this.txtPass.TabIndex = 4;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(56, 21);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(224, 26);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Thông tin đăng nhập";
             // 
-            // btnDangNhap
+            // panel2
             // 
-            this.btnDangNhap.Location = new System.Drawing.Point(83, 12);
-            this.btnDangNhap.Name = "btnDangNhap";
-            this.btnDangNhap.Size = new System.Drawing.Size(112, 40);
-            this.btnDangNhap.TabIndex = 0;
-            this.btnDangNhap.Text = "Đăng nhập";
-            this.btnDangNhap.UseVisualStyleBackColor = true;
-            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
+            this.panel2.Controls.Add(this.btnThoat);
+            this.panel2.Controls.Add(this.btnDangNhap);
+            this.panel2.Location = new System.Drawing.Point(13, 164);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(529, 69);
+            this.panel2.TabIndex = 1;
             // 
             // btnThoat
             // 
@@ -125,6 +117,16 @@
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
+            // 
+            // btnDangNhap
+            // 
+            this.btnDangNhap.Location = new System.Drawing.Point(83, 12);
+            this.btnDangNhap.Name = "btnDangNhap";
+            this.btnDangNhap.Size = new System.Drawing.Size(112, 40);
+            this.btnDangNhap.TabIndex = 0;
+            this.btnDangNhap.Text = "Đăng nhập";
+            this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // Form2
             // 

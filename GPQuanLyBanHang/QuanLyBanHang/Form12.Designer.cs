@@ -32,9 +32,15 @@
             this.txtTongSoHD = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
-            this.cbxChonSanPham = new System.Windows.Forms.ComboBox();
+            this.cbxSanPham = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvHDtheoSP = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnTroVe = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
@@ -47,7 +53,7 @@
             this.panel1.Controls.Add(this.txtTongSoHD);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.btnOK);
-            this.panel1.Controls.Add(this.cbxChonSanPham);
+            this.panel1.Controls.Add(this.cbxSanPham);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(12, 12);
             this.panel1.Name = "panel1";
@@ -80,13 +86,14 @@
             this.btnOK.Text = "OK";
             this.btnOK.UseVisualStyleBackColor = true;
             // 
-            // cbxChonSanPham
+            // cbxSanPham
             // 
-            this.cbxChonSanPham.FormattingEnabled = true;
-            this.cbxChonSanPham.Location = new System.Drawing.Point(186, 13);
-            this.cbxChonSanPham.Name = "cbxChonSanPham";
-            this.cbxChonSanPham.Size = new System.Drawing.Size(262, 24);
-            this.cbxChonSanPham.TabIndex = 1;
+            this.cbxSanPham.FormattingEnabled = true;
+            this.cbxSanPham.Location = new System.Drawing.Point(186, 13);
+            this.cbxSanPham.Name = "cbxSanPham";
+            this.cbxSanPham.Size = new System.Drawing.Size(262, 24);
+            this.cbxSanPham.TabIndex = 1;
+            this.cbxSanPham.SelectedIndexChanged += new System.EventHandler(this.cbxChonSanPham_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -100,12 +107,61 @@
             // 
             // dgvHDtheoSP
             // 
+            this.dgvHDtheoSP.AllowUserToAddRows = false;
             this.dgvHDtheoSP.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvHDtheoSP.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column2,
+            this.Column3,
+            this.Column4,
+            this.Column5,
+            this.Column6});
             this.dgvHDtheoSP.Location = new System.Drawing.Point(12, 73);
             this.dgvHDtheoSP.Name = "dgvHDtheoSP";
             this.dgvHDtheoSP.RowTemplate.Height = 24;
             this.dgvHDtheoSP.Size = new System.Drawing.Size(852, 347);
             this.dgvHDtheoSP.TabIndex = 3;
+            this.dgvHDtheoSP.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvHDtheoSP_CellContentClick);
+            // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaHD";
+            this.Column1.HeaderText = "Mã HĐ";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "MaSP";
+            this.Column2.HeaderText = "Mã SP";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "MaNV";
+            this.Column3.HeaderText = "Mã NV";
+            this.Column3.Name = "Column3";
+            this.Column3.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "MaKH";
+            this.Column4.HeaderText = "Mã KH";
+            this.Column4.Name = "Column4";
+            this.Column4.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.Column4.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "NgayLapHD";
+            this.Column5.HeaderText = "Ngày Lập HĐ";
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.DataPropertyName = "NgayNhanHang";
+            this.Column6.HeaderText = "Ngày Nhận Hàng";
+            this.Column6.Name = "Column6";
             // 
             // panel3
             // 
@@ -123,6 +179,7 @@
             this.btnTroVe.TabIndex = 0;
             this.btnTroVe.Text = "Trở Về";
             this.btnTroVe.UseVisualStyleBackColor = true;
+            this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
             // Form12
             // 
@@ -134,6 +191,7 @@
             this.Controls.Add(this.panel1);
             this.Name = "Form12";
             this.Text = "Quản Lý Hóa Đơn Theo Sản Phẩm";
+            this.Load += new System.EventHandler(this.Form12_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHDtheoSP)).EndInit();
@@ -148,10 +206,16 @@
         private System.Windows.Forms.TextBox txtTongSoHD;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btnOK;
-        private System.Windows.Forms.ComboBox cbxChonSanPham;
+        private System.Windows.Forms.ComboBox cbxSanPham;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.DataGridView dgvHDtheoSP;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnTroVe;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewComboBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

@@ -17,3 +17,7 @@ D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanH
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form7.resources
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form8.resources
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form9.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form12.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form13.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form14.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form15.resources

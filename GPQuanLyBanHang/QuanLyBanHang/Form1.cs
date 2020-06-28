@@ -91,5 +91,82 @@ namespace QuanLyBanHang
             frm.Text = "Quản lý Danh mục Thành Phố";
             frm.ShowDialog();
         }
+
+        private void danhMụcKháchHàngToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form5();
+            frm.Text = "Quản lý Danh mục Khách Hàng";
+            frm.ShowDialog();
+        }
+
+        private void danhMụcNhânViênToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form6();
+            frm.Text = "Quản lý Danh mục Nhân Viên";
+            frm.ShowDialog();
+        }
+
+        private void danhMụcSảnPhẩmToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form7();
+            frm.Text = "Quản lý Danh mục Sản Phẩm";
+            frm.ShowDialog();
+        }
+
+        private void danhMụcHóaĐơnToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form8();
+            frm.Text = "Quản lý Danh mục Hóa Đơn";
+            frm.ShowDialog();
+        }
+
+        private void danhMụcChiTiếtHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form9();
+            frm.Text = "Quản lý Danh mục Chi Tiết Hóa Đơn";
+            frm.ShowDialog();
+        }
+
+        private void kháchHàngTheoThànhPhốToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form10();
+            frm.Text = "Quản lý Khách Hàng Theo Thành Phố";
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnTheoKháchHàngToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form11();
+            frm.Text = "Quản lý Hóa Đơn Theo Khách Hàng";
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnTheoSảnPhẩmToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form12();
+            frm.Text = "Quản lý Hóa Đơn Theo Sản Phẩm";
+            frm.ShowDialog();
+        }
+
+        private void hóaĐơnTheoNhânViênToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form13();
+            frm.Text = "Quản lý Hóa Đơn Theo Nhân Viên";
+            frm.ShowDialog();
+        }
+
+        private void chiTiếtHóaĐơnTheoHóaĐơnToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form14();
+            frm.Text = "Quản lý Hóa Đơn Theo Chi Tiết Hóa Đơn";
+            frm.ShowDialog();
+        }
+
+        private void đaCấpToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form frm = new Form15();
+            frm.Text = "Quản lý Đa Cấp";
+            frm.ShowDialog();
+        }
     }
 }
