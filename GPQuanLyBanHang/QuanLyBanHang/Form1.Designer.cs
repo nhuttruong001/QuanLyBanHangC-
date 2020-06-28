@@ -66,10 +66,10 @@
             this.hóaĐơnTheoSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hóaĐơnTheoNhânViênToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.chiTiếtHóaĐơnTheoHóaĐơnToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.đaCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.giúpĐỡToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.hướngDẫnSửDụngToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tácGiảToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.đaCấpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -405,6 +405,13 @@
             this.chiTiếtHóaĐơnTheoHóaĐơnToolStripMenuItem.Text = "Chi Tiết Hóa Đơn theo Hóa Đơn";
             this.chiTiếtHóaĐơnTheoHóaĐơnToolStripMenuItem.Click += new System.EventHandler(this.chiTiếtHóaĐơnTheoHóaĐơnToolStripMenuItem_Click);
             // 
+            // đaCấpToolStripMenuItem
+            // 
+            this.đaCấpToolStripMenuItem.Name = "đaCấpToolStripMenuItem";
+            this.đaCấpToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
+            this.đaCấpToolStripMenuItem.Text = "Đa Cấp";
+            this.đaCấpToolStripMenuItem.Click += new System.EventHandler(this.đaCấpToolStripMenuItem_Click);
+            // 
             // giúpĐỡToolStripMenuItem
             // 
             this.giúpĐỡToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -425,13 +432,6 @@
             this.tácGiảToolStripMenuItem.Name = "tácGiảToolStripMenuItem";
             this.tácGiảToolStripMenuItem.Size = new System.Drawing.Size(222, 26);
             this.tácGiảToolStripMenuItem.Text = "Tác Giả";
-            // 
-            // đaCấpToolStripMenuItem
-            // 
-            this.đaCấpToolStripMenuItem.Name = "đaCấpToolStripMenuItem";
-            this.đaCấpToolStripMenuItem.Size = new System.Drawing.Size(296, 26);
-            this.đaCấpToolStripMenuItem.Text = "Đa Cấp";
-            this.đaCấpToolStripMenuItem.Click += new System.EventHandler(this.đaCấpToolStripMenuItem_Click);
             // 
             // Form1
             // 

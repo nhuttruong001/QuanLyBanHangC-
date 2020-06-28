@@ -29,14 +29,14 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txtTongSoHD = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnOK = new System.Windows.Forms.Button();
             this.cbxMaHD = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvChiTietHDtheoHD = new System.Windows.Forms.DataGridView();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btnTroVe = new System.Windows.Forms.Button();
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtTongSoHD = new System.Windows.Forms.TextBox();
             this.maHD = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tenSP = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -56,6 +56,23 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(795, 55);
             this.panel1.TabIndex = 4;
+            // 
+            // txtTongSoHD
+            // 
+            this.txtTongSoHD.Location = new System.Drawing.Point(706, 14);
+            this.txtTongSoHD.Name = "txtTongSoHD";
+            this.txtTongSoHD.Size = new System.Drawing.Size(82, 22);
+            this.txtTongSoHD.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(583, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(117, 22);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tổng số HĐ :";
             // 
             // btnOK
             // 
@@ -118,30 +135,12 @@
             this.btnTroVe.UseVisualStyleBackColor = true;
             this.btnTroVe.Click += new System.EventHandler(this.btnTroVe_Click);
             // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(583, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(117, 22);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tổng số HĐ :";
-            // 
-            // txtTongSoHD
-            // 
-            this.txtTongSoHD.Location = new System.Drawing.Point(706, 14);
-            this.txtTongSoHD.Name = "txtTongSoHD";
-            this.txtTongSoHD.Size = new System.Drawing.Size(82, 22);
-            this.txtTongSoHD.TabIndex = 4;
-            // 
             // maHD
             // 
             this.maHD.DataPropertyName = "MaHD";
             this.maHD.HeaderText = "Mã HĐ";
             this.maHD.Name = "maHD";
             this.maHD.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.maHD.Width = 250;
             // 
             // tenSP
             // 
@@ -150,7 +149,6 @@
             this.tenSP.Name = "tenSP";
             this.tenSP.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.tenSP.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            this.tenSP.Width = 250;
             // 
             // Column3
             // 

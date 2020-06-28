@@ -31,26 +31,26 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtDonGia = new System.Windows.Forms.TextBox();
             this.txtDonViTinh = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTenSanPham = new System.Windows.Forms.TextBox();
             this.txtMaSP = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTenSP = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.dgvSANPHAM = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.btnXoa = new System.Windows.Forms.Button();
             this.btnTroVe = new System.Windows.Forms.Button();
             this.btnHuyBo = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
             this.btnReLoad = new System.Windows.Forms.Button();
-            this.btnXoa = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewImageColumn();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvSANPHAM)).BeginInit();
             this.panel3.SuspendLayout();
@@ -60,7 +60,7 @@
             // 
             this.panel1.Controls.Add(this.txtDonGia);
             this.panel1.Controls.Add(this.txtDonViTinh);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.txtTenSanPham);
             this.panel1.Controls.Add(this.txtMaSP);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
@@ -85,12 +85,13 @@
             this.txtDonViTinh.Size = new System.Drawing.Size(231, 22);
             this.txtDonViTinh.TabIndex = 6;
             // 
-            // textBox2
+            // txtTenSanPham
             // 
-            this.textBox2.Location = new System.Drawing.Point(99, 47);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(231, 22);
-            this.textBox2.TabIndex = 5;
+            this.txtTenSanPham.Location = new System.Drawing.Point(99, 47);
+            this.txtTenSanPham.Name = "txtTenSanPham";
+            this.txtTenSanPham.Size = new System.Drawing.Size(231, 22);
+            this.txtTenSanPham.TabIndex = 5;
+            this.txtTenSanPham.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // txtMaSP
             // 
@@ -154,6 +155,36 @@
             this.dgvSANPHAM.Size = new System.Drawing.Size(807, 271);
             this.dgvSANPHAM.TabIndex = 2;
             // 
+            // Column1
+            // 
+            this.Column1.DataPropertyName = "MaSP";
+            this.Column1.HeaderText = "MaSP";
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.DataPropertyName = "TenSP";
+            this.Column2.HeaderText = "TenSP";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.DataPropertyName = "DonViTinh";
+            this.Column3.HeaderText = "DonViTinh";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.DataPropertyName = "DonGia";
+            this.Column4.HeaderText = "DonGia";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.DataPropertyName = "Hinh";
+            this.Column5.HeaderText = "Hinh";
+            this.Column5.Name = "Column5";
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnXoa);
@@ -167,6 +198,16 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(808, 48);
             this.panel3.TabIndex = 4;
+            // 
+            // btnXoa
+            // 
+            this.btnXoa.Location = new System.Drawing.Point(604, 0);
+            this.btnXoa.Name = "btnXoa";
+            this.btnXoa.Size = new System.Drawing.Size(100, 38);
+            this.btnXoa.TabIndex = 7;
+            this.btnXoa.Text = "Xóa";
+            this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnTroVe
             // 
@@ -228,46 +269,6 @@
             this.btnReLoad.UseVisualStyleBackColor = true;
             this.btnReLoad.Click += new System.EventHandler(this.btnReLoad_Click);
             // 
-            // btnXoa
-            // 
-            this.btnXoa.Location = new System.Drawing.Point(604, 0);
-            this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(100, 38);
-            this.btnXoa.TabIndex = 7;
-            this.btnXoa.Text = "Xóa";
-            this.btnXoa.UseVisualStyleBackColor = true;
-            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
-            // 
-            // Column1
-            // 
-            this.Column1.DataPropertyName = "MaSP";
-            this.Column1.HeaderText = "MaSP";
-            this.Column1.Name = "Column1";
-            // 
-            // Column2
-            // 
-            this.Column2.DataPropertyName = "TenSP";
-            this.Column2.HeaderText = "TenSP";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.DataPropertyName = "DonViTinh";
-            this.Column3.HeaderText = "DonViTinh";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.DataPropertyName = "DonGia";
-            this.Column4.HeaderText = "DonGia";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.DataPropertyName = "Hinh";
-            this.Column5.HeaderText = "Hinh";
-            this.Column5.Name = "Column5";
-            // 
             // Form7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -292,7 +293,7 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txtDonGia;
         private System.Windows.Forms.TextBox txtDonViTinh;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtTenSanPham;
         private System.Windows.Forms.TextBox txtMaSP;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;

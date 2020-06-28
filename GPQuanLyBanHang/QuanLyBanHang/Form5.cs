@@ -25,7 +25,7 @@ namespace QuanLyBanHang
 
             conn = new SqlConnection(@"Data Source=DESKTOP-I2RPGMO\SQLEXPRESS;Initial Catalog=QuanLyBanHang;Integrated Security=True");
 
-            // Vận chuyển dữ liệu vào DataTable dtThanhPho
+            
             daThanhPho = new SqlDataAdapter("SELECT * FROM ThanhPho", conn);
             dtThanhPho = new DataTable();
             dtThanhPho.Clear();
@@ -86,7 +86,7 @@ namespace QuanLyBanHang
             }
         }
 
-      /*  public void ResetText()
+       /* public void ResetText()
         {
             this.txtMaKH.ResetText();
             this.txtDiaChi.ResetText();
@@ -180,7 +180,7 @@ namespace QuanLyBanHang
 
                     LoadKH();
 
-                    MessageBox.Show("Đã xóa!");
+                    MessageBox.Show("Đã Xóa Thành công!");
                 }
                 catch (SqlException)
                 {
@@ -239,7 +239,7 @@ namespace QuanLyBanHang
                     cmd.CommandType = CommandType.Text;
                     cmd.ExecuteNonQuery();
                     LoadKH();
-                    MessageBox.Show("Đã sửa xong!");
+                    MessageBox.Show("Đã sửa Thành Công!");
                     ChangeButtonState(0);
                 }
                 catch (SqlException sqlEx)
@@ -247,7 +247,7 @@ namespace QuanLyBanHang
                     MessageBox.Show(sqlEx.ToString());
                 }
             }
-            ResetText();
+            //ResetText();
             conn.Close();   
         }
 
@@ -255,7 +255,7 @@ namespace QuanLyBanHang
         {
             this.Them = false;
             this.ChangeButtonState(0);
-            this.ResetText();
+           // this.ResetText();
         }
 
         private void txtDienThoai_TextChanged(object sender, EventArgs e)

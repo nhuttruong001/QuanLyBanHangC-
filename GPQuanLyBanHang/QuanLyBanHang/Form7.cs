@@ -83,6 +83,7 @@ namespace QuanLyBanHang
             this.ChangeButtonState(1);
             this.Resettxt();
             this.txtMaSP.Focus();
+            
         }
 
         private void btnSua_Click(object sender, EventArgs e)
@@ -95,7 +96,7 @@ namespace QuanLyBanHang
             int GioiTinh = Convert.ToInt32(dgvSANPHAM.Rows[rowIndex].Cells[3].Value.ToString());
 
             this.txtMaSP.Text = dgvSANPHAM.Rows[rowIndex].Cells[0].Value.ToString();
-            this.txtTenSP.Text = dgvSANPHAM.Rows[rowIndex].Cells[1].Value.ToString();
+            this.txtTenSanPham.Text = dgvSANPHAM.Rows[rowIndex].Cells[1].Value.ToString();
             this.txtDonViTinh.Text = dgvSANPHAM.Rows[rowIndex].Cells[2].Value.ToString();
             this.txtDonGia.Text = dgvSANPHAM.Rows[rowIndex].Cells[3].Value.ToString(); 
         }
@@ -104,7 +105,7 @@ namespace QuanLyBanHang
         {
             this.ChangeButtonState(0);
             this.txtMaSP.ResetText();
-            this.txtTenSP.ResetText();
+            this.txtTenSanPham.ResetText();
             this.txtDonViTinh.ResetText();
             this.txtDonGia.ResetText();
         }
@@ -112,7 +113,7 @@ namespace QuanLyBanHang
         public void Resettxt()
         {
             this.txtMaSP.ResetText();
-            this.txtTenSP.ResetText();
+            this.txtTenSanPham.ResetText();
             this.txtDonViTinh.ResetText();
             this.txtDonGia.ResetText();
             txtMaSP.Focus();
@@ -168,7 +169,7 @@ namespace QuanLyBanHang
                     SqlCommand cmd = new SqlCommand();
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
-                    cmd.CommandText = System.String.Concat("INSERT INTO SanPham VALUES (N'" + this.txtMaSP.Text + "', N'" + this.txtTenSP.Text + "', N'" + this.txtDonViTinh.Text + "', " + this.txtDonGia.Text + ",NULL)");
+                    cmd.CommandText = System.String.Concat("INSERT INTO SanPham VALUES (N'" + this.txtMaSP.Text + "', N'" + this.txtTenSanPham.Text + "', N'" + this.txtDonViTinh.Text + "', " + this.txtDonGia.Text + ",NULL)");
                     cmd.CommandType = CommandType.Text;
                     cmd.ExecuteNonQuery();
                     LoadSP();
@@ -190,7 +191,7 @@ namespace QuanLyBanHang
                     cmd.Connection = conn;
                     cmd.CommandType = CommandType.Text;
                     cmd.CommandText = String.Concat("UPDATE SanPham SET TenSP=N'"
-                        + this.txtTenSP.Text + "', DonViTinh= N'"
+                        + this.txtTenSanPham.Text + "', DonViTinh= N'"
                         + this.txtDonViTinh.Text + "', DonGia= "
                         + this.txtDonGia.Text + " WHERE MaSP ='"
                         + this.txtMaSP.Text + "'");
@@ -208,6 +209,11 @@ namespace QuanLyBanHang
             }
 
             conn.Close();
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
