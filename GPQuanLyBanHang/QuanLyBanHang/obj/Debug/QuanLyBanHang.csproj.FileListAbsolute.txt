@@ -10,3 +10,10 @@ D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanH
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form2.resources
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form3.resources
 D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form4.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form10.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form11.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form5.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form6.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form7.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form8.resources
+D:\Phần mềm QL Bán Hàng\GPQuanLyBanHang\QuanLyBanHang\obj\Debug\QuanLyBanHang.Form9.resources
